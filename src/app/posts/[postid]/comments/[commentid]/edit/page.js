@@ -1,6 +1,7 @@
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import React from "react"
 
 export default async function EditComment({ params }) {
   const comment =
